@@ -1,0 +1,120 @@
+/* GENERAL CSS */
+
+body {
+	min-width: 631px;
+	background-color: #1a1a1a;
+	font-family: sans-serif;
+	color: white;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: green;
+}
+
+h1 {
+	opacity: 0;
+	border-top: solid white 1px;
+	border-bottom: solid white 1px;
+	font-size: 40pt;
+	text-transform: uppercase;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-align: center;
+	padding-left: 2em;
+	letter-spacing: 2em;
+}
+
+h2 {
+	display: inline-block;
+	margin: 0;
+	margin-right: 25px;
+}
+
+button {
+	position: relative;
+	top: -3px;
+	font-size: 11pt;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: solid white 1px;
+	background-color: #1a1a1a;
+	color: white;
+}
+
+button:hover {
+	background-color: green;
+}
+
+.banner {
+	position: relative;
+	top: -250px;
+	width: 100%;
+}
+
+/* NAVIGATION BAR */
+
+.nav ul {
+	z-index: 1;
+	min-width: 631px;
+	margin: 0;
+	background-color: black;
+	opacity: 0.9;
+	list-style-type: none;
+	position: fixed;
+	top: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.nav li {
+	float: left;
+}
+
+.nav li a {
+	color: white;
+	background-color: black;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+}
+
+.nav a:hover {
+	background-color: #004000;
+}
+
+#active {
+	background-color: green;
+}
+
+/* OTHER CLASSES */
+
+.main {
+	width: 80%;
+	margin: auto;
+}
+
+.contact {
+	width: 100%;
+	text-align: center;
+}
+
+.footer {
+	clear: both;
+	margin-top: 25px;
+	font-size: 10pt;
+	border-top: solid white 1px;
+	text-align: center;
+}
+
+.gallery img {
+	cursor: pointer;
+	border: solid transparent 1px;
+	width: 32%;
+}
+
+.gallery img:hover {
+	border: solid white 1px;
+}
