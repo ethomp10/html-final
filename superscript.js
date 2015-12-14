@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	// Banner animations
-	$(".banner").animate({top: '0'}, {queue: false, duration: 1000});
+	$(".banner").animate({top: '0px'}, {queue: false, duration: 1000});
 	$(".banner").animate({opacity: '1'}, {queue: false, duration: 1000});
 	$("h1").animate({letterSpacing: '30px'}, {queue: false, duration: 1000});
 	$("h1").animate({paddingLeft: '30px'}, {queue: false, duration: 1000});
@@ -32,18 +32,9 @@ $(document).ready(function(){
 		$("#chocolate").hide();
 	});
 
-	// Image enlarge
+	// Image resize
 	$(".gallery img").click(function(){
-
-		// var width = $(this).width();
 		if ($(this).width() < 500) {
-			// $(".gallery img").hide();
-			// $(this).show();
-			// $(this).css("z-index", "3");
-			// $(this).css("float", "left");
-			// $(this).css("top", "50");
-			// $(this).css("display", "absolute");
-
 			$(this).animate({width: '100%'});
 		} else {
 			$(this).animate({width: '32.8%'});
