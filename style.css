@@ -1,12 +1,12 @@
 /* GENERAL CSS */
-
 body {
-	min-width: 631px;
 	background-color: #1a1a1a;
 	font-family: sans-serif;
 	color: white;
 	margin: 0;
 }
+
+/** {border: solid white 1px;}*/
 
 a {
 	text-decoration: none;
@@ -14,6 +14,7 @@ a {
 }
 
 h1 {
+	min-width: 970px;
 	opacity: 0;
 	border-top: solid white 1px;
 	border-bottom: solid white 1px;
@@ -21,8 +22,8 @@ h1 {
 	text-transform: uppercase;
 	margin-top: 25px;
 	margin-bottom: 25px;
-	text-align: center;
 	padding-left: 2em;
+	text-align: center;
 	letter-spacing: 2em;
 }
 
@@ -49,16 +50,18 @@ button:hover {
 }
 
 .banner {
+	opacity: 0;
 	position: relative;
-	top: -250px;
+	top: -100%;
 	width: 100%;
+	min-width: 1000px;
 }
 
 /* NAVIGATION BAR */
-
 .nav ul {
-	z-index: 1;
-	min-width: 631px;
+	z-index: 3;
+	width: 100%;
+	min-width: 1000px;
 	margin: 0;
 	background-color: black;
 	opacity: 0.9;
@@ -66,7 +69,6 @@ button:hover {
 	position: fixed;
 	top: 0;
 	padding: 0;
-	width: 100%;
 }
 
 .nav li {
@@ -90,10 +92,11 @@ button:hover {
 }
 
 /* OTHER CLASSES */
-
 .main {
-	width: 80%;
+	width: 950px;
 	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .contact {
@@ -102,6 +105,7 @@ button:hover {
 }
 
 .footer {
+	min-width: 1000px;
 	clear: both;
 	margin-top: 25px;
 	font-size: 10pt;
@@ -112,9 +116,15 @@ button:hover {
 .gallery img {
 	cursor: pointer;
 	border: solid transparent 1px;
-	width: 32%;
+	width: 32.8%;
 }
 
 .gallery img:hover {
 	border: solid white 1px;
+}
+
+.video {
+	text-align: center;
+	max-width: 1000px;
+	max-height: 10px;
 }
