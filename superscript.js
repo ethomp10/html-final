@@ -6,7 +6,7 @@ $(document).ready(function(){
 	$("h1").animate({paddingLeft: '30px'}, {queue: false, duration: 1000});
 	$("h1").animate({opacity: '1'}, {queue: false, duration: 1000});
 
-	// Shows and hides recepies on Food page
+	// Shows and hides recipes on Food page
 	$("#show1").click(function(){
 		$("#show1").hide();
 		$("#soup").show();
@@ -32,12 +32,12 @@ $(document).ready(function(){
 		$("#chocolate").hide();
 	});
 
-	// Image resize
-	$(".gallery img").click(function(){
+	// Gallery image expand
+	$("#gallery img").click(function(){
 		if ($(this).width() < 500) {
 			$(this).animate({width: '100%'});
 		} else {
-			$(this).animate({width: '32.8%'});
+			$(this).animate({width: '30%'});
 		};
 	});
 });

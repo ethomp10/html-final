@@ -6,8 +6,6 @@ body {
 	margin: 0;
 }
 
-/** {border: solid white 1px;}*/
-
 a {
 	text-decoration: none;
 	color: green;
@@ -113,13 +111,30 @@ button:hover {
 	text-align: center;
 }
 
-.gallery img {
-	cursor: pointer;
-	border: solid transparent 1px;
-	width: 32.8%;
+.thumb {
+	text-align: center;
 }
 
-.gallery img:hover {
+.games {
+	text-align: center;
+}
+
+.games img {
+	height: 300px;
+	border: solid transparent 1px;
+}
+
+.games img:hover {
+	border: solid white 1px;
+}
+
+.thumb img {
+	cursor: pointer;
+	border: solid transparent 1px;
+	width: 30%;
+}
+
+.thumb img:hover {
 	border: solid white 1px;
 }
 
